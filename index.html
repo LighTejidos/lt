@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lightejidos — Una fusión con diseño exclusivo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* ---- HERO ---- */
+    .hero {
+     position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.hero__video{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -1;
+}
+    .hero__fondo {
+      position: absolute;
+      inset: 0;
+      
+      opacity: 0.6;
+    }
+    .hero__contenido {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 60px 24px;
+          position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: white;
+    }
+    .hero__titulo {
+      font-family: var(--fuente-display);
+      font-size: var(--fs-64);
+      font-weight: 700;
+      color: var(--blanco);
+      letter-spacing: 0.08em;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.5);
+      margin-bottom: 12px;
+    }
+    .hero__subtitulo {
+      font-family: var(--fuente-cuerpo);
+      font-size: var(--fs-14);
+      font-weight: 300;
+      color: var(--blanco);
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    /* ---- BARRA DE BENEFICIOS ---- */
+    .barra-beneficios {
+      background: var(--crema);
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .beneficio-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      text-align: center;
+    }
+    .beneficio-item__icono {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .beneficio-item__icono img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+    .beneficio-item__icono svg {
+      width: 34px;
+      height: 34px;
+      stroke: var(--oscuro);
+      fill: none;
+      stroke-width: 1.5;
+    }
+    .beneficio-item__etiqueta {
+      font-family: var(--fuente-cuerpo);
+      font-size: var(--fs-13);
+      font-weight: 400;
+      color: var(--oscuro);
+    }
+
+    /* ---- PRODUCTOS DESTACADOS ---- */
+    .seccion-destacados {
+      padding: 48px 0;
+      background: var(--blanco);
+    }
+
+    /* ---- BANNER HISTORIA ---- */
+    .banner-historia {
+      background: var(--oliva);
+      padding: 48px 0;
+    }
+    .banner-historia__img {
+      width: 100%;
+      max-width: 280px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: var(--radio);
+    }
+    .banner-historia__img-ph {
+      width: 100%;
+      max-width: 280px;
+      aspect-ratio: 1/1;
+      border-radius: var(--radio);
+      background: rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .banner-historia__img-ph img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: var(--radio);
+    }
+    .banner-historia__texto {
+      color: var(--blanco);
+      padding: 0 0 0 40px;
+    }
+    .banner-historia__titulo {
+      font-family: var(--fuente-display);
+      font-size: var(--fs-32);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .banner-historia__titulo em {
+      font-style: italic;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    .btn-oscuro-pill {
+      background: var(--oscuro);
+      color: var(--blanco);
+      font-family: var(--fuente-cuerpo);
+      font-size: var(--fs-14);
+      font-weight: 700;
+      border: none;
+      border-radius: var(--radio-pill);
+      padding: 10px 28px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background var(--transicion);
+    }
+    .btn-oscuro-pill:hover { background: var(--vino); color: var(--blanco); }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 767px) {
+      .hero              { min-height: 280px; }
+      .hero__contenido   { padding: 40px 16px; }
+      .hero__titulo      { font-size: var(--fs-40); letter-spacing: 0.05em; }
+      .hero__subtitulo   { font-size: 11px; letter-spacing: 0.18em; }
+
+      .barra-beneficios  { padding: 18px 0; }
+      .beneficio-item__etiqueta { font-size: 11px; }
+
+      .seccion-destacados { padding: 32px 0; }
+
+      .banner-historia        { padding: 32px 0; }
+      .banner-historia__texto { padding: 0; margin-top: 20px; }
+      .banner-historia__titulo { font-size: var(--fs-24); margin-bottom: 16px; }
+      .banner-historia__img-ph,
+      .banner-historia__img   { max-width: 100%; }
+    }
+
+    @media (max-width: 480px) {
+      .hero__titulo { font-size: var(--fs-32); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- CARRITO LATERAL -->
+  <div id="cart-placeholder"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+  
+    <video autoplay muted loop playsinline class="hero__video">
+        <source src="./imagenes/tejer.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero__contenido">
+        <h1 class="hero__titulo">LIGHTEJIDOS</h1>
+
+        <p class="hero__subtitulo">
+            UNA FUSIÓN CON DISEÑO EXCLUSIVO
+        </p>
+    </div>
+  </section>
+
+  <!-- ============ BARRA DE BENEFICIOS ============ -->
+  <section class="barra-beneficios">
+    <div class="container">
+      <div class="row g-3 justify-content-center">
+
+        <div class="col-6 col-md-3">
+          <div class="beneficio-item">
+            <div class="beneficio-item__icono">
+              <img src="imagenes/tejido-de-punto (3).png" alt="icono beneficio">
+            </div>
+            <span class="beneficio-item__etiqueta">Hecho a mano</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="beneficio-item">
+            <div class="beneficio-item__icono">
+              <img src="imagenes/estrellas.png" alt="icono beneficio">
+            </div>
+            <span class="beneficio-item__etiqueta">Materiales de Calidad</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="beneficio-item">
+            <div class="beneficio-item__icono">
+              <img src="imagenes/tejido-de-punto (4).png" alt="icono beneficio">
+            </div>
+            <span class="beneficio-item__etiqueta">Diseños Exclusivos</span>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="beneficio-item">
+            <div class="beneficio-item__icono">
+              <img src="imagenes/replantar.png" alt="icono beneficio">
+            </div>
+            <span class="beneficio-item__etiqueta">Producción responsable</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTOS DESTACADOS ============ -->
+  <section class="seccion-destacados">
+    <div class="container">
+      <h2 class="titulo-seccion">Nuestros productos destacados</h2>
+      <div class="row g-3" id="grilla-destacados"></div>
+      <div class="text-center mt-4">
+        <a href="productos.html" class="enlace-ver-mas">Ver más →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BANNER HISTORIA ============ -->
+  <section class="banner-historia">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-5 d-flex justify-content-center">
+          <div class="banner-historia__img-ph">
+            <img src="imagenes/foto_dueña.jpeg" alt="Imagen dueña de Lightejidos">
+          </div>
+        </div>
+        <div class="col-md-7 banner-historia__texto">
+          <h2 class="banner-historia__titulo">
+            Conoce la historia detrás<br>
+            de <em>nuestros productos</em>
+          </h2>
+          <a href="nosotros.html" class="btn-oscuro-pill">Click Aquí</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grilla = document.getElementById('grilla-destacados');
+      if (!grilla) return;
+
+      grilla.innerHTML = productosDestacados.map(p => `
+        <div class="col-6 col-md-4 col-lg-4">
+          ${htmlTarjetaProducto(p)}
+        </div>`).join('');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestra Historia — Lightejidos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .pagina-historia {
+      padding: 64px 0;
+      background: var(--blanco);
+    }
+
+    .historia-titulo {
+      font-family: var(--fuente-display);
+      font-size: var(--fs-48);
+      font-weight: 700;
+      color: var(--vino);
+      margin-bottom: 48px;
+    }
+
+    /* Timeline */
+    .historia-timeline {
+      position: relative;
+      padding-left: 56px;
+    }
+    .historia-timeline::before {
+      content: '';
+      position: absolute;
+      left: 22px;
+      top: 16px;
+      bottom: 16px;
+      width: 2px;
+      background: var(--crema);
+    }
+
+    .historia-paso {
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .historia-paso:last-child { margin-bottom: 0; }
+
+    .historia-paso__bullet {
+      position: absolute;
+      left: -48px;
+      top: 4px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--verde);
+      border: 2px solid var(--crema);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .historia-paso__bullet svg {
+      width: 16px;
+      height: 16px;
+      stroke: var(--crema);
+      fill: none;
+      stroke-width: 2.5;
+    }
+
+    .historia-paso__titulo {
+      font-family: var(--fuente-display);
+      font-size: var(--fs-24);
+      font-weight: 700;
+      color: var(--vino);
+      margin-bottom: 8px;
+    }
+
+    .historia-paso__texto {
+      font-size: var(--fs-16);
+      color: rgba(0,0,0,0.65);
+      line-height: 1.7;
+    }
+
+    /* Columna derecha */
+    .historia-quote {
+      border-left: 4px solid var(--vino);
+      padding-left: 24px;
+      font-family: var(--fuente-cuerpo);
+      font-size: var(--fs-16);
+      color: rgba(0,0,0,0.7);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .historia-imagen-circular {
+      width: 100%;
+      max-width: 480px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-left: auto;
+      background: var(--crema);
+    }
+
+    .historia-imagen-circular img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform-origin: 20% 30%;
+      transform: scale(2.2);
+    }
+    .historia-imagen-ph {
+      color: rgba(0,0,0,0.25);
+      font-style: italic;
+      font-size: var(--fs-16);
+      text-align: center;
+      padding: 24px;
+    }
+
+    @media (max-width: 991px) {
+      .historia-titulo { font-size: var(--fs-40); }
+      .historia-imagen-circular { max-width: 320px; margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- CARRITO LATERAL -->
+  <div id="cart-placeholder"></div>
+
+  <!-- ============ NUESTRA HISTORIA ============ -->
+  <main class="pagina-historia">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+
+        <!-- Columna izquierda: título + timeline -->
+        <div class="col-lg-6">
+          <h1 class="historia-titulo">Nuestra Historia</h1>
+
+          <div class="historia-timeline">
+
+            <div class="historia-paso">
+              <div class="historia-paso__bullet">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h2 class="historia-paso__titulo">El Origen</h2>
+              <p class="historia-paso__texto">
+                Todo comenzó con las manos de una abuela que tejía y transmitía su arte. Su hija aprendió ese oficio y, en el momento en que decidió dejar de trabajar para otros, convirtió esa herencia en su propio emprendimiento.
+              </p>
+            </div>
+
+            <div class="historia-paso">
+              <div class="historia-paso__bullet">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h2 class="historia-paso__titulo">Una Red de Mujeres</h2>
+              <p class="historia-paso__texto">
+                El negocio creció entre hermanas. Apoyándose mutuamente y compartiendo el conocimiento, construyeron juntas una red de trabajo artesanal basada en la confianza y la colaboración familiar.
+              </p>
+            </div>
+
+            <div class="historia-paso">
+              <div class="historia-paso__bullet">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h2 class="historia-paso__titulo">Calidad y Reconocimiento</h2>
+              <p class="historia-paso__texto">
+                Con el tiempo, la marca elevó la calidad de sus materiales y participó en ferias y asociaciones de artesanos en Mosquera. Así, nuestra marca pasó de ser una herencia familiar a una marca reconocida por la calidad y autenticidad de cada pieza tejida a mano.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Columna derecha: quote + imagen circular -->
+        <div class="col-lg-6">
+          <blockquote class="historia-quote">
+            LIGHTEJIDOS nació de una tradición familiar tejida con amor y dedicación. Lo que comenzó como una enseñanza entre abuela y madre, se convirtió en el motor de un emprendimiento hecho con las manos y el corazón de mujeres que decidieron crear su propio camino.
+          </blockquote>
+
+          <div class="historia-imagen-circular">
+            <!-- Reemplaza con: <img src="img/historia-imagen.jpg" alt="Ovillos de lana Lightejidos"> -->
+            <div class="historia-imagen-ph">
+              <img src="imagenes/Nuestra_historia.jpg" alt="Imagen lana para tejer">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
