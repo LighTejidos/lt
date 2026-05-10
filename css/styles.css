@@ -212,7 +212,7 @@ body {
 /* CARRITO LATERAL */
 .sidebar-carrito {
   position: fixed; top: 0; right: -100%;
-  width: 100%; max-width: 340px; height: 100vh;
+  width: 100%; max-width: 340px; height: 100dvh;
   background: var(--blanco); z-index: 1500;
   display: flex; flex-direction: column;
   transition: right 0.32s cubic-bezier(0.4,0,0.2,1);
@@ -254,7 +254,7 @@ body {
   padding: 10px; background: var(--blanco);
 }
 .carrito-item__miniatura {
-  width: 60px; height: 60px; flex-shrink: 0;
+  width: 80px; height: 80px; flex-shrink: 0;
   border-radius: var(--radio); background: var(--crema);
   display: flex; align-items: center; justify-content: center;
   overflow: hidden; font-size: 10px; color: rgba(0,0,0,0.3); text-align: center;
@@ -320,7 +320,7 @@ body {
   .titulo-seccion   { font-size: var(--fs-24); margin-bottom: 60px; }
   .titulo-categoria { font-size: var(--fs-20); }
 
-  .sidebar-carrito  { max-width: 100%; }
+  .sidebar-carrito  { max-width: 85%; }
 
   .pie-pagina       { padding: 28px 0 16px; }
   .pie-redes a      { width: 36px; height: 36px; }

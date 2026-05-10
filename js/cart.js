@@ -166,7 +166,7 @@ const Carrito = (() => {
     }
     let mensaje = '¡Hola! Me gustaría cotizar los siguientes productos de LIGHTEJIDOS:\n\n';
     articulos.forEach(a => {
-      mensaje += `• ${a.nombre} (x${a.cantidad}) — ${a.rangoPrecios}\n`;
+      mensaje += `• ${a.desc} (x${a.cantidad}) — ${a.rangoPrecios}\n`;
     });
     mensaje += `\nRango de precio total: ${calcularRango()}`;
     const url = `https://wa.me/573003925381?text=${encodeURIComponent(mensaje)}`;
