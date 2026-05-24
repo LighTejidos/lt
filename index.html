@@ -161,6 +161,7 @@
       display: inline-block;
       text-decoration: none;
       transition: background var(--transicion);
+      margin-top: 10px;
     }
     .btn-oscuro-pill:hover { background: var(--vino); color: var(--blanco); }
 
@@ -176,16 +177,19 @@
 
       .seccion-destacados { padding: 32px 0; }
 
-      .banner-historia        { padding: 32px 0; }
-      .banner-historia__texto { padding: 0; margin-top: 20px; }
-      .banner-historia__titulo { font-size: var(--fs-24); margin-bottom: 16px; }
-      .banner-historia__img-ph,
-      .banner-historia__img   { max-width: 100%; }
-    }
-
+      .banner-historia         { padding: 50px 20px; }
+      .banner-historia__texto  { text-align: center; display: flex; flex-direction: column; align-items: center;margin-top: 20px; padding-left: 0; }
+      .banner-historia__titulo { font-size: 2rem; margin-bottom: 16px; }
+      .banner-historia__img-ph { width: 100%; display: flex; justify-content: center}
+      .banner-historia__img-ph img    { width: 100%; max-width: 350px; height: auto; display: block; border-radius: 16px;}
+    
+}
     @media (max-width: 480px) {
-      .hero__titulo { font-size: var(--fs-32); }
+      .hero__titulo { font-size: var(--fs-32);}
+
+  .banner-historia__titulo { font-size: 1.7rem;}
     }
+  
   </style>
 </head>
 <body>
@@ -278,9 +282,9 @@
           </div>
         </div>
         <div class="col-md-7 banner-historia__texto">
-          <h2 class="banner-historia__titulo">
-            Conoce la historia detrás<br>
-            de <em>nuestros productos</em>
+          <h2 class="banner-historia__titulo"> 
+            Conoce la historia detrás <br>
+            de <em> nuestros productos </em>
           </h2>
           <a href="nosotros.html" class="btn-oscuro-pill">Click Aquí</a>
         </div>
