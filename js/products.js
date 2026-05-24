@@ -211,7 +211,7 @@ const categorias = [
       {
         id: 'ruana #1',
         nombre: 'Ruanas tejidas',
-        desc: 'Ruana tejida en cuadros multicolor fucsia, naranja y lila, con cuello y borlas mostaza. Amplia y muy abrigadora.',
+        desc: 'Ruana tejida en cuadros multicolor fucsia, naranja y lila. Amplia y muy abrigadora.',
         img: 'imagenes/productos/ruanas/r1.1.png',
         imgAlt: 'Ruana tejida fucsia naranja lila'
       },
@@ -222,36 +222,30 @@ const categorias = [
         img: 'imagenes/productos/ruanas/r2.1.png',
         imgAlt: 'Ruana tejida a rayas tonos tierra'
       },
+     
       {
-        id: 'ruana #3',
+        id: 'ruana #3|',
         nombre: 'Ruanas tejidas',
-        desc: 'Ruana tejida en cuadros fucsia, naranja y lila con cuello mostaza y borlas. Vibrante y artesanal.',
-        img: 'imagenes/productos/ruanas/r3.1.png',
-        imgAlt: 'Ruana tejida colores tierra'
-      },
-      {
-        id: 'ruana #4',
-        nombre: 'Ruanas tejidas',
-        desc: 'Ruana tejida multicolor en tonos arcoíris con cuello tejido y flecos mostaza. Alegre y muy abrigadora.',
+        desc: 'Ruana tejida multicolor en tonos arcoíris. Alegre y muy abrigadora.',
         img: 'imagenes/productos/ruanas/r4.1.png',
         imgAlt: 'Ruana tejida multicolor arcoíris'
       },
         {
-        id: 'ruana #5',
+        id: 'ruana #4',
         nombre: 'Ruanas tejidas',
         desc: 'Ruana tejida en cuadros tonos tierra, naranja y turquesa. Amplia, cálida y de estilo bohemio.',
         img: 'imagenes/productos/ruanas/r5.1.png',
         imgAlt: 'Ruana tejida tonos tierra'
       },
         {
-        id: 'ruana #6',
+        id: 'ruana #5',
         nombre: 'Ruanas tejidas',
-        desc: 'Ruana crochet a rayas multicolor con flecos y borlas mostaza. Incluye cuello tejido a juego.',
+        desc: 'Ruana crochet a rayas multicolor con flecos y borlas mostaza.',
         img: 'imagenes/productos/ruanas/r6.1.png',
         imgAlt: 'Ruana crochet a rayas multicolor'
       },
         {
-        id: 'ruana #7',
+        id: 'ruana #6',
         nombre: 'Ruanas tejidas',
         desc: 'Ruana crochet en cuadros beige, blanco y naranja con largos flecos. Estilo bohemio y muy elegante.',
         img: 'imagenes/productos/ruanas/r7.1.png',
