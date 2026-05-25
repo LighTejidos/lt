@@ -15,11 +15,11 @@
     /* ---- SECCIÓN CONTACTO ---- */
     .seccion-contacto {
       position: relative;
-      min-height: 600px;
+      min-height: 700px;
       display: flex;
       align-items: stretch;
       overflow: hidden;
-      flex: 1;
+
     }
 
     /* Panel verde izquierdo: 1/4 del ancho */
@@ -135,10 +135,10 @@
 
     /* Responsive */
     @media (max-width: 767px) {
-      .seccion-contacto { flex-direction: column; min-height: auto; }
+      .seccion-contacto { flex-direction: column; min-height: auto; overflow: visible; }
 
-      .contacto-fondo-imagen { width: 100%; min-height: 250px; background-position:  center; background-repeat: no-repeat;
-  } 
+      .contacto-fondo-imagen { width: 100%; min-height: 250px; background-position:  center; background-repeat: no-repeat;} 
+
       .contacto-tarjeta  {
         position: relative;
         top: auto;
@@ -150,14 +150,11 @@
         padding: 30px 22px;
         border-radius: var(--radio);
         box-shadow: 0 4px 20px rgba(0,0,0,0.12);
-
-      }
-      .contacto-tarjeta h1{
-  text-align: center;
-  font-size: 2rem;
       }
 
-      .contacto-tarjeta .subtitulo{ text-align: center;}
+      .contacto-tarjeta h1 { text-align: center; font-size: 2rem; }
+
+      .contacto-tarjeta .subtitulo{ text-align: center; }
 
       .campo-form { font-size: 16px; }
 
