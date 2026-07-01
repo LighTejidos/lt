@@ -8,9 +8,9 @@ const categorias = [
   {
     id: 'bolsos',
     nombre: 'Bolsos',
-    rangoPrecios: '$120 - 150 mil',
-    precioMin: 120000,
-    precioMax: 150000,
+    rangoPrecios: 'Cotizar',
+    precioMin: 0,
+    precioMax: 0,
     productos: [
       {
         id: 'bolso #1',
@@ -74,9 +74,9 @@ const categorias = [
   {
     id: 'gorros',
     nombre: 'Gorros',
-    rangoPrecios: 'Niños $20 - 30 mil · Adultos $25 - 30 mil',
-    precioMin: 20000,
-    precioMax: 30000,
+    rangoPrecios: 'Cotizar',
+    precioMin: 0,
+    precioMax: 0,
     productos: [
       {
         id: 'gorro #1',
@@ -139,9 +139,9 @@ const categorias = [
   {
     id: 'blusas',
     nombre: 'Blusas',
-    rangoPrecios: '$55 - 70 mil',
-    precioMin: 55000,
-    precioMax: 70000,
+    rangoPrecios: 'Cotizar',
+    precioMin: 0,
+    precioMax: 0,
     productos: [
       {
         id: 'blusa #1',
@@ -204,9 +204,9 @@ const categorias = [
   {
     id: 'ruanas',
     nombre: 'Ruanas',
-    rangoPrecios: '$120 - 150 mil',
-    precioMin: 120000,
-    precioMax: 150000,
+    rangoPrecios: 'Cotizar',
+    precioMin: 0,
+    precioMax: 0,
     productos: [
       {
         id: 'ruana #1',
@@ -256,9 +256,9 @@ const categorias = [
   {
     id: 'cuellos',
     nombre: 'Cuellos',
-    rangoPrecios: 'Niños $20 - 30 mil · Adultos $25 - 30 mil',
-    precioMin: 20000,
-    precioMax: 30000,
+    rangoPrecios: 'Cotizar',
+    precioMin: 0,
+    precioMax: 0,
     productos: [
       {
         id: 'cuello #1',
@@ -300,9 +300,9 @@ const categorias = [
   {
     id: 'mascotas',
     nombre: 'Ropa Para Mascotas',
-    rangoPrecios: '$35 - 55 mil',
-    precioMin: 35000,
-    precioMax: 55000,
+    rangoPrecios: 'Cotizar',
+    precioMin: 0,
+    precioMax: 0,
     productos: [
       {
         id: 'saco de mascota #1',
